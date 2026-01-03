@@ -64,4 +64,4 @@ export const targetElements = [
       origin: "bottom",
     },
   },
-];ß
+];

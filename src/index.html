@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" class="sr">
   <head>
@@ -6,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
 
-    <title>Jay Deore | Developer | MBA</title>
+    <!-- Todo: put here your site title -->
+    <title>Jay Deore | Developer</title>
     <!-- Todo: add some coding keywords below - e.g: (javascript, yourusername, etc) -->
     <meta name="keywords" content="[username], [name], skill" />
     <!-- Todo: improve your SEO by adding a small description of you -->
@@ -21,9 +23,6 @@
       defer
       src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
     ></script>
-
-    <!-- Todo: remove the below script once you finish your portfolio -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
   </head>
 
   <!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
@@ -34,7 +33,7 @@
     <section id="hero" class="jumbotron">
       <div class="container">
         <h1 class="hero-title load-hidden">
-          Hi, my name is <span class="text-color-main">Your Name</span>
+          Hi, my name is <span class="text-color-main">Jay Deore</span>
           <br />
           I'm the Unknown Developer.
         </h1>
@@ -60,7 +59,6 @@
                 height="auto"
                 width="300px"
                 src="assets/profile.jpg"
-                alt="Profile Image"
               />
             </div>
           </div>
@@ -260,14 +258,34 @@
       <div class="container">
         <h2 class="section-title">Contact</h2>
         <div class="contact-wrapper load-hidden">
-          <p class="contact-wrapper__text">[Put your call to action here]</p>
-          <a
-            rel="noreferrer"
-            target="_blank"
-            class="cta-btn cta-btn--resume"
-            href="mailto:example@email.com"
-            >Call to Action</a
-          >
+          <p class="contact-wrapper__text">Get In Touch</p>
+
+          <!-- Contact Form -->
+          <form class="contact-form" action="mailto:your.email@example.com" method="post" enctype="text/plain">
+            <div class="form-group">
+              <label for="email">Your Email (if you want me to contact you back)</label>
+              <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+            </div>
+
+            <div class="form-actions">
+              <button type="submit" class="cta-btn cta-btn--contact">Mail Me</button>
+            </div>
+          </form>
+
+          <div class="contact-cta">
+            <a
+              rel="noreferrer"
+              target="_blank"
+              class="cta-btn cta-btn--resume"
+              href="mailto:your.email@example.com?subject=Let's Connect"
+              >Call to Action</a
+            >
+          </div>
         </div>
       </div>
     </section>
